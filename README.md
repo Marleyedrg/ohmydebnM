@@ -271,13 +271,24 @@ The Cinnamon desktop environment includes basic window tiling based on a 2x2 gri
 - Press `Super + Down` to make the active window tile to the bottom half of the screen.
 - You can tile to a corner by combining these options. For example, to tile to the upper right corner, hold the `Super` key and then press the Up arrow and then the Right arrow.
 
-For more advanced window tiling options, we've included a custom version of the gTile extension:
+For more advanced window tiling options, we've included a custom version of the gTile extension that includes window gaps to look more like a tiling window manager:
 - Pressing `Ctrl-Shift-G` will display the gTile overlay and give you several options for tiling the active window.
 - The default grid options are 2x2, 3x2, 4x4, or 6x6. You can select a different grid option with the mouse or by pressing `1`, `2`, `3`, or `4`. You can modify these default grid options by going to the gTile extension settings.
 - Select the starting tile by pressing the letter associated with that tile and then select the ending tile by pressing the letter associated with that tile. For example, to tile the window to the left half of the screen in a 4x4 grid, press `a` and then `n`.
 - To set the window to a single tile, press the letter twice. For example, to tile to the upper left corner, press `a` twice.
 
 ![OhMyDebn gTile window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-gtile.png)
+
+There are also hotkeys for common tiling options that leverage gTile for window gaps:
+- Press `Ctrl + Shift + 1 (numeric keypad)` to tile to bottom left corner with gaps.
+- Press `Ctrl + Shift + 2 (numeric keypad)` to tile to bottom half with gaps.
+- Press `Ctrl + Shift + 3 (numeric keypad)` to tile to bottom right corner with gaps.
+- Press `Ctrl + Shift + 4 (numeric keypad)` to tile to left half with gaps.
+- Press `Ctrl + Shift + 5 (numeric keypad)` to tile to full screen with gaps.
+- Press `Ctrl + Shift + 6 (numeric keypad)` to tile to right half with gaps.
+- Press `Ctrl + Shift + 7 (numeric keypad)` to tile to top left corner with gaps.
+- Press `Ctrl + Shift + 8 (numeric keypad)` to tile to top half with gaps.
+- Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
 
 # Desktop Themes
 
@@ -415,6 +426,15 @@ Pressing `Super + K` will open Chromium and navigate to this list of keyboard bi
 | `Super + PageDown` | Minimize window |
 | `Ctrl + Alt + Down` | Window selection |
 | `Ctrl + Shift + G` | gTile window tiling |
+| `Ctrl + Shift + 1 (numeric keypad)` | Tile to bottom left corner with gaps |
+| `Ctrl + Shift + 2 (numeric keypad)` | Tile to bottom half with gaps |
+| `Ctrl + Shift + 3 (numeric keypad)` | Tile to bottom right corner with gaps |
+| `Ctrl + Shift + 4 (numeric keypad)` | Tile to left half with gaps |
+| `Ctrl + Shift + 5 (numeric keypad)` | Tile to full screen with gaps |
+| `Ctrl + Shift + 6 (numeric keypad)` | Tile to right half with gaps |
+| `Ctrl + Shift + 7 (numeric keypad)` | Tile to top left corner with gaps |
+| `Ctrl + Shift + 8 (numeric keypad)` | Tile to top half with gaps |
+| `Ctrl + Shift + 9 (numeric keypad)` | Tile to top right corner with gaps |
 
 ## Workspaces
 
