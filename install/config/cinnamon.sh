@@ -43,11 +43,14 @@ if [ ! -f $SPICE_STATE ]; then
   touch $SPICE_STATE
 fi
 
-EXTENSIONS_STATE=~/.local/state/ohmydebn-config/cinnamon-extensions-20250914
+EXTENSIONS_STATE=~/.local/state/ohmydebn-config/cinnamon-extensions-20250919
 if [ ! -f $EXTENSIONS_STATE ]; then
   ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Configuring gTile extension"
   cd ~/.local/share/cinnamon/extensions/
-  wget https://github.com/dougburks/gTile/releases/download/2.2.1/gTile.tar.gz
+  if [ -d "gTile@OhMyDebn" ]; then
+    rm -rf "gTile@OhMyDebn"
+  fi
+  wget https://github.com/dougburks/gTile/releases/download/2.2.1-20250919/gTile.tar.gz
   tar zxvf gTile.tar.gz
   rm -f gTile.tar.gz
   cd - >/dev/null
