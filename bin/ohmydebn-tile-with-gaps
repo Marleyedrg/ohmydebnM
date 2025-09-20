@@ -2,50 +2,34 @@
 
 case "$1" in
 'left')
-  FIRST="a"
-  SECOND="c"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 0 1 2
   ;;
 'top-left')
-  FIRST="a"
-  SECOND="a"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 0 1 1
   ;;
 'top')
-  FIRST="a"
-  SECOND="b"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 0 2 1
   ;;
 'full')
-  FIRST="a"
-  SECOND="d"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 0 2 2
   ;;
 'bottom')
-  FIRST="c"
-  SECOND="d"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 1 2 1
   ;;
 'right')
-  FIRST="b"
-  SECOND="d"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 1 0 1 2
   ;;
 'top-right')
-  FIRST="b"
-  SECOND="b"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 1 0 1 1
   ;;
 'bottom-left')
-  FIRST="c"
-  SECOND="c"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 0 1 1 1
   ;;
 'bottom-right')
-  FIRST="d"
-  SECOND="d"
+  /usr/bin/gdbus call --session --dest org.gTile.Control --object-path /org/gTile/Control --method org.gTile.Control.TileFocusedWindow 2 2 1 1 1 1
   ;;
 *)
   echo "Usage: $0 {left|right|top|bot|top-right|top-left|bottom-right|bottom-left}"
   exit 1
   ;;
 esac
-
-XDOTOOL=/usr/bin/xdotool
-$XDOTOOL key ctrl+shift+g
-sleep 0.1s
-$XDOTOOL key 1
-$XDOTOOL key $FIRST
-$XDOTOOL key $SECOND
