@@ -288,13 +288,13 @@ To configure gTile:
 
 There are also hotkeys for common tiling options that leverage gTile for window gaps:
 - Press `Ctrl + Shift + 1 (numeric keypad)` to tile to bottom left corner with gaps.
-- Press `Ctrl + Shift + 2 (numeric keypad)` to tile to bottom half with gaps.
+- Press `Ctrl + Shift + 2 (numeric keypad)` or `Ctrl + Shift + Down` to tile to bottom half with gaps.
 - Press `Ctrl + Shift + 3 (numeric keypad)` to tile to bottom right corner with gaps.
-- Press `Ctrl + Shift + 4 (numeric keypad)` to tile to left half with gaps.
-- Press `Ctrl + Shift + 5 (numeric keypad)` to tile to full screen with gaps.
-- Press `Ctrl + Shift + 6 (numeric keypad)` to tile to right half with gaps.
+- Press `Ctrl + Shift + 4 (numeric keypad)` or `Ctrl + Shift + Left` to tile to left half with gaps.
+- Press `Ctrl + Shift + 5 (numeric keypad)` or `Ctrl + Shift + Enter` to tile to full screen with gaps.
+- Press `Ctrl + Shift + 6 (numeric keypad)` or `Ctrl + Shift + Right` to tile to right half with gaps.
 - Press `Ctrl + Shift + 7 (numeric keypad)` to tile to top left corner with gaps.
-- Press `Ctrl + Shift + 8 (numeric keypad)` to tile to top half with gaps.
+- Press `Ctrl + Shift + 8 (numeric keypad)` or `Ctrl + Shift + Up` to tile to top half with gaps.
 - Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
 
 # Desktop Themes
@@ -442,6 +442,11 @@ Pressing `Super + K` will open Chromium and navigate to this list of keyboard bi
 | `Ctrl + Shift + 7 (numeric keypad)` | Tile to top left corner with gaps |
 | `Ctrl + Shift + 8 (numeric keypad)` | Tile to top half with gaps |
 | `Ctrl + Shift + 9 (numeric keypad)` | Tile to top right corner with gaps |
+| `Ctrl + Shift + Down` | Tile to bottom half with gaps |
+| `Ctrl + Shift + Left` | Tile to left half with gaps |
+| `Ctrl + Shift + Enter` | Tile to full screen with gaps |
+| `Ctrl + Shift + Right` | Tile to right half with gaps |
+| `Ctrl + Shift + Up` | Tile to top half with gaps |
 
 ## Workspaces
 
