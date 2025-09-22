@@ -313,7 +313,7 @@ The `Remove Theme` option allows you to remove any extra themes that you've inst
 
 ![OhMyDebn theme remove](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-theme-remove.png)
 
-Here are some screenshots of the default Ohmydebn theme and several themes from Omarchy.
+Here are some screenshots of the themes included from Omarchy.
 
 Catppuccin theme:
 
