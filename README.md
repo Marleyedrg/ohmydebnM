@@ -264,7 +264,7 @@ To visualize your system audio, press `Ctrl + Shift + A` to launch Cava.
 ![OhMyDebn Cava audio visualizer](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-cava-audio.png)
 # Window Tiling
 
-The Cinnamon desktop environment includes basic window tiling based on a 2x2 grid:
+The Cinnamon desktop environment includes basic window tiling:
 - Press `Super + Left` to make the active window tile to the left half of the screen.
 - Press `Super + Right` to make the active window tile to the right half of the screen.
 - Press `Super + Up` to make the active window tile to the top half of the screen.
@@ -278,6 +278,24 @@ For more advanced window tiling options, we've included a custom version of the 
 - To set the window to a single tile, press the letter twice. For example, to tile to the upper left corner, press `a` twice.
 
 ![OhMyDebn gTile window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-gtile.png)
+
+To configure gTile:
+- go to System Settings -> Extensions
+- next to gTile, click the Configure button
+- click the Behavior tab
+
+![OhMyDebn gTile settings](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-gtile-settings.png)
+
+There are also hotkeys for common tiling options that leverage gTile for window gaps:
+- Press `Ctrl + Shift + 1 (numeric keypad)` to tile to bottom left corner with gaps.
+- Press `Ctrl + Shift + 2 (numeric keypad)` or `Ctrl + Shift + Down` to tile to bottom half with gaps.
+- Press `Ctrl + Shift + 3 (numeric keypad)` to tile to bottom right corner with gaps.
+- Press `Ctrl + Shift + 4 (numeric keypad)` or `Ctrl + Shift + Left` to tile to left half with gaps.
+- Press `Ctrl + Shift + 5 (numeric keypad)` or `Ctrl + Shift + Enter` to tile to full screen with gaps.
+- Press `Ctrl + Shift + 6 (numeric keypad)` or `Ctrl + Shift + Right` to tile to right half with gaps.
+- Press `Ctrl + Shift + 7 (numeric keypad)` to tile to top left corner with gaps.
+- Press `Ctrl + Shift + 8 (numeric keypad)` or `Ctrl + Shift + Up` to tile to top half with gaps.
+- Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
 
 # Desktop Themes
 
@@ -295,7 +313,7 @@ The `Remove Theme` option allows you to remove any extra themes that you've inst
 
 ![OhMyDebn theme remove](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-theme-remove.png)
 
-Here are some screenshots of the default Ohmydebn theme and several themes from Omarchy.
+Here are some screenshots of the themes included from Omarchy.
 
 Catppuccin theme:
 
@@ -415,6 +433,20 @@ Pressing `Super + K` will open Chromium and navigate to this list of keyboard bi
 | `Super + PageDown` | Minimize window |
 | `Ctrl + Alt + Down` | Window selection |
 | `Ctrl + Shift + G` | gTile window tiling |
+| `Ctrl + Shift + 1 (numeric keypad)` | Tile to bottom left corner with gaps |
+| `Ctrl + Shift + 2 (numeric keypad)` | Tile to bottom half with gaps |
+| `Ctrl + Shift + 3 (numeric keypad)` | Tile to bottom right corner with gaps |
+| `Ctrl + Shift + 4 (numeric keypad)` | Tile to left half with gaps |
+| `Ctrl + Shift + 5 (numeric keypad)` | Tile to full screen with gaps |
+| `Ctrl + Shift + 6 (numeric keypad)` | Tile to right half with gaps |
+| `Ctrl + Shift + 7 (numeric keypad)` | Tile to top left corner with gaps |
+| `Ctrl + Shift + 8 (numeric keypad)` | Tile to top half with gaps |
+| `Ctrl + Shift + 9 (numeric keypad)` | Tile to top right corner with gaps |
+| `Ctrl + Shift + Down` | Tile to bottom half with gaps |
+| `Ctrl + Shift + Left` | Tile to left half with gaps |
+| `Ctrl + Shift + Enter` | Tile to full screen with gaps |
+| `Ctrl + Shift + Right` | Tile to right half with gaps |
+| `Ctrl + Shift + Up` | Tile to top half with gaps |
 
 ## Workspaces
 
