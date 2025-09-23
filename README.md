@@ -270,6 +270,9 @@ The Cinnamon desktop environment includes basic window tiling:
 - Press `Super + Up` to make the active window tile to the top half of the screen.
 - Press `Super + Down` to make the active window tile to the bottom half of the screen.
 - You can tile to a corner by combining these options. For example, to tile to the upper right corner, hold the `Super` key and then press the Up arrow and then the Right arrow.
+- Cinnamon's basic window tiling has no window gaps so it maximizes your screen area and is especially helpful when working on smaller screens like laptops.
+
+![OhMyDebn Cinnamon window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-cinnamon-tiling.png)
 
 For more advanced window tiling options, we've included a custom version of the gTile extension:
 - Pressing `Ctrl-Shift-G` will display the gTile overlay and give you several options for tiling the active window.
