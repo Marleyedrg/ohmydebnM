@@ -270,6 +270,9 @@ The Cinnamon desktop environment includes basic window tiling:
 - Press `Super + Up` to make the active window tile to the top half of the screen.
 - Press `Super + Down` to make the active window tile to the bottom half of the screen.
 - You can tile to a corner by combining these options. For example, to tile to the upper right corner, hold the `Super` key and then press the Up arrow and then the Right arrow.
+- Cinnamon's basic window tiling has no window gaps so it maximizes your screen area and is especially helpful when working on smaller screens like laptops.
+
+![OhMyDebn Cinnamon window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-cinnamon-tiling.png)
 
 For more advanced window tiling options, we've included a custom version of the gTile extension:
 - Pressing `Ctrl-Shift-G` will display the gTile overlay and give you several options for tiling the active window.
@@ -296,6 +299,14 @@ There are also hotkeys for common tiling options that leverage gTile for window 
 - Press `Ctrl + Shift + 7 (numeric keypad)` to tile to top left corner with gaps.
 - Press `Ctrl + Shift + 8 (numeric keypad)` or `Ctrl + Shift + Up` to tile to top half with gaps.
 - Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
+
+For example, to lay out windows like in the following screenshot:
+- Press `Ctrl + Shift + O` to display the OhMyDebn logo and then `Ctrl + Shift 7` to tile to the upper left corner.
+- Press `Ctrl + Shift + S` to display the screenfetch window and then `Ctrl + Shift + 1` to tile to the lower left corner.
+- Press `Super + T` to start btop and then `Ctrl + Shift + 9` to tile to the upper right corner.
+- Launch VSCode and then press `Ctrl + Shift + 3` to tile to the lower right corner.
+
+![OhMyDebn gTile window tiling with gaps](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn.png)
 
 # Desktop Themes
 
