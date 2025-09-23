@@ -133,7 +133,7 @@ Here's an old MacBook from 2014. Apple says it's EOL but OhMyDebn breathes new l
 
 ![OhMyDebn MacBook 2014](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-macbook-2014.png)
 
-Here's a Dell laptop that Microsoft says won't run Windows 11. Proxmox and OhMyDebn turned it into a portable virtualization powerhouse! 
+Here's a Dell laptop that Microsoft says won't run Windows 11 but it runs OhMyDebn beautifully!
 
 ![OhMyDebn Dell laptop](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-dell-laptop.png)
 

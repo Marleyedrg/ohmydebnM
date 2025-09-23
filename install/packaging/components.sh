@@ -21,6 +21,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   gvfs-backends \
   htop \
   iperf3 \
+  jq \
   keepassxc \
   lazygit \
   libnotify-bin \
@@ -43,6 +44,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   yaru-theme-gtk \
   yaru-theme-icon \
   yq \
+  zip \
   zoxide \
   zsh \
   zsh-autosuggestions \

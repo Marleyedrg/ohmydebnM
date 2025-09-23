@@ -43,7 +43,7 @@ if [ ! -f $SPICE_STATE ]; then
   touch $SPICE_STATE
 fi
 
-GTILE_EXTENSION_STATE=~/.local/state/ohmydebn-config/gTile-extension-20250920
+GTILE_EXTENSION_STATE=~/.local/state/ohmydebn-config/gTile-extension-20250922
 if [ ! -f $GTILE_EXTENSION_STATE ]; then
   ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Installing gTile extension"
   rm -rf ~/.local/share/cinnamon/extensions/gTile@OhMyDebn

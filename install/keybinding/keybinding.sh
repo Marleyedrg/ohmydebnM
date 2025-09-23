@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STATE_DIR=~/.local/state/ohmydebn-config
-KEYBINDING_STATE=$STATE_DIR/keybinding-20260920
+KEYBINDING_STATE=$STATE_DIR/keybinding-20260922
 
 if [ ! -f $KEYBINDING_STATE ]; then
   ~/.local/share/ohmydebn/bin/ohmydebn-headline "tte rain" "Updating hotkeys"
