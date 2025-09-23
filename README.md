@@ -300,6 +300,14 @@ There are also hotkeys for common tiling options that leverage gTile for window 
 - Press `Ctrl + Shift + 8 (numeric keypad)` or `Ctrl + Shift + Up` to tile to top half with gaps.
 - Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
 
+For example, to lay out windows like in the following screenshot:
+- Press `Ctrl + Shift + O` to display the OhMyDebn logo and then `Ctrl + Shift 7` to tile to the upper left corner.
+- Press `Ctrl + Shift + S` to display the screenfetch window and then `Ctrl + Shift + 1` to tile to the lower left corner.
+- Press `Super + T` to start btop and then `Ctrl + Shift + 9` to tile to the upper right corner.
+- Launch VSCode and then press `Ctrl + Shift + 3` to tile to the lower right corner.
+
+![OhMyDebn gTile window tiling with gaps](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn.png)
+
 # Desktop Themes
 
 You can change the desktop theme by pressing `Ctrl + Super + T`. This will bring up a list of installed themes including the default Ohmydebn theme and several themes from Omarchy. There are also three options at the end of the list titled `Next Background`, `Install New Theme`, and `Remove Theme`.
