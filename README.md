@@ -33,6 +33,7 @@ OhMyDebn is a debonair Debian + Cinnamon setup inspired by Omarchy. It is beauti
 - [Updating](#updating)
 - [Resetting](#resetting)
 - [Text editor](#text-editor)
+- [Documents](#documents)
 - [Firewall](#firewall)
 - [Desktop Effects](#desktop-effects)
 - [Hotkeys](#hotkeys)
@@ -232,6 +233,7 @@ To run applications, you can select `Apps` from the OhMyDebn menu or just press 
 To start a web browser, you can open it from the traditional program menu, from the Rofi application launcher, or just press `Super + B`. This launches [Chromium](https://www.chromium.org/Home/) with the uBlock Origin Lite content blocker already installed for you.
 
 ![OhMyDebn chromium web browser with uBlock Origin Lite content blocker](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-chromium-ublock.png)
+If you prefer Google Chrome, you can install it by going to [OhMyDebn Menu](#ohmydebn-menu) -> Install -> Browser -> Google Chrome.
 
 # OhMyDebn Logo
 
@@ -400,6 +402,10 @@ To start a text editor, press `Super + N`. This launches the beautiful and power
 ![OhMyDebn Neovim screenshot](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-neovim.png)
 
 The hotkeys section below includes more hotkeys for Neovim and a link to additional information.
+
+# Documents
+
+LibreOffice is installed to handle common document types like documents and spreadsheets. For PDF files, Evince is the default PDF viewer. If you need to annotate a PDF, you can use the included Xournal++.
 
 # Firewall
 
