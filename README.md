@@ -36,6 +36,7 @@ OhMyDebn is a debonair Debian + Cinnamon setup inspired by Omarchy. It is beauti
 - [Documents](#documents)
 - [Firewall](#firewall)
 - [Desktop Effects](#desktop-effects)
+- [Desktop Magnifier](#desktop-magnifier)
 - [Hotkeys](#hotkeys)
 - [Relationship to Security Onion](#relationship-to-security-onion)
 - [Acknowledgements](#Acknowledgements)
@@ -405,7 +406,7 @@ The hotkeys section below includes more hotkeys for Neovim and a link to additio
 
 # Documents
 
-LibreOffice is installed to handle common document types like documents and spreadsheets. For PDF files, Evince is the default PDF viewer. If you need to annotate a PDF, you can use the included Xournal++.
+LibreOffice is installed to handle common file types like documents and spreadsheets. For PDF files, Evince is the default PDF viewer. If you need to annotate a PDF, you can use the included Xournal++.
 
 # Firewall
 
@@ -414,6 +415,10 @@ OhMyDebn includes [ufw](https://help.ubuntu.com/community/UFW) and configures it
 # Desktop Effects
 
 Desktop and window effects are enabled by default. If you would like to disable them, go to System Settings, click Effects, and then click the slider next to `Desktop and window effects` to disable.
+
+# Desktop Magnifier
+
+If you need to zoom in on part of your desktop, you can do so by enabling the magnifier via [OhMyDebn Menu](#ohmydebn-menu). Once enabled, hold down the Ctrl key and then use your scroll wheel to zoom in and out.
 
 # Hotkeys
 
