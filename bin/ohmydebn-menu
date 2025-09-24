@@ -69,7 +69,7 @@ install_chrome() {
   if [ "$ARCH" == "x86_64" ]; then
     install_from_url "Google Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
   else
-    present_terminal "echo 'Sorry, Google doesn't provide a Chrome package for your architecture!'"
+    present_terminal "echo 'Sorry, Google does not provide a Chrome package for your architecture!'"
   fi
 }
 
