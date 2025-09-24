@@ -64,6 +64,15 @@ install_vscode() {
   fi
 }
 
+install_chrome() {
+  ARCH=$(uname -m)
+  if [ "$ARCH" == "x86_64" ]; then
+    install_from_url "Google Chrome" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+  else
+    present_terminal "echo 'Sorry, Google doesn't provide a Chrome package for your architecture!'"
+  fi
+}
+
 install_and_launch() {
   present_terminal "echo 'Installing $1...'; sudo apt -y install $2 && setsid gtk-launch $3"
 }
@@ -115,13 +124,21 @@ show_screenrecord_menu() {
 
 show_install_menu() {
   #case $(menu "Install" "  Package\n  Web App\n  TUI\n  Service\n  Style") in
-  case $(menu "Install" "  Package\n  Web App\n  TUI\n  Style\n  Editor") in
+  case $(menu "Install" "  Package\n  Browser\n  Web App\n  TUI\n  Style\n  Editor") in
   *Package*) terminal ohmydebn-pkg-install ;;
+  *Browser*) show_install_browser_menu ;;
   *Web*) present_terminal ohmydebn-webapp-install ;;
   *TUI*) present_terminal ohmydebn-tui-install ;;
   *Style*) show_install_style_menu ;;
   *Development*) show_install_development_menu ;;
   *Editor*) show_install_editor_menu ;;
+  *) show_main_menu ;;
+  esac
+}
+
+show_install_browser_menu() {
+  case $(menu "Install" "  Google Chrome") in
+  *Chrome*) terminal install_chrome ;;
   *) show_main_menu ;;
   esac
 }
