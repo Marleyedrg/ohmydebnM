@@ -230,7 +230,7 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n🔍Screen Magnifier\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n🔍 Screen Magnifier\n  System")"
 }
 
 go_to_menu() {
