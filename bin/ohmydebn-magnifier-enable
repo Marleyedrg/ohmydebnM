@@ -1,0 +1,12 @@
+#!/bin/bash
+
+~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Enabling screen magnifier"
+
+gsettings set org.cinnamon.desktop.a11y.applications screen-magnifier-enabled true
+gsettings set org.cinnamon.desktop.a11y.magnifier mouse-tracking 'push'
+gsettings set org.cinnamon.desktop.a11y.magnifier screen-position 'full-screen'
+gsettings set org.cinnamon.desktop.wm.preferences mouse-button-zoom-modifier '<Control>'
+
+echo "Screen magnifier is now enabled."
+echo
+echo "To activate, hold the Ctrl key and use the scroll wheel to zoom in and out."

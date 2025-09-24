@@ -230,7 +230,7 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n🔍Screen Magnifier\n  System")"
 }
 
 go_to_menu() {
@@ -247,6 +247,7 @@ go_to_menu() {
   *update*) show_update_menu ;;
   *about*) ohmydebn-screenfetch-gui ;;
   *demo*) ohmydebn-demo-gui ;;
+  *magnifier*) present_terminal ohmydebn-magnifier-enable ;;
   *system*) show_system_menu ;;
   esac
 }
