@@ -418,7 +418,7 @@ Desktop and window effects are enabled by default. If you would like to disable 
 
 # Screen Magnifier
 
-If you need to zoom in on part of your screen, you can do so by enabling the magnifier via [OhMyDebn Menu](#ohmydebn-menu). Once enabled, hold down the Ctrl key and then use your scroll wheel to zoom in and out.
+If you need to zoom in on part of your screen, you can do so by enabling the magnifier via [OhMyDebn Menu](#ohmydebn-menu). Once enabled, hold down the Alt key and then use your scroll wheel to zoom in and out.
 
 # Hotkeys
 
