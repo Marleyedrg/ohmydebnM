@@ -33,8 +33,10 @@ OhMyDebn is a debonair Debian + Cinnamon setup inspired by Omarchy. It is beauti
 - [Updating](#updating)
 - [Resetting](#resetting)
 - [Text editor](#text-editor)
+- [Documents](#documents)
 - [Firewall](#firewall)
 - [Desktop Effects](#desktop-effects)
+- [Screen Magnifier](#screen-magnifier)
 - [Hotkeys](#hotkeys)
 - [Relationship to Security Onion](#relationship-to-security-onion)
 - [Acknowledgements](#Acknowledgements)
@@ -232,6 +234,7 @@ To run applications, you can select `Apps` from the OhMyDebn menu or just press 
 To start a web browser, you can open it from the traditional program menu, from the Rofi application launcher, or just press `Super + B`. This launches [Chromium](https://www.chromium.org/Home/) with the uBlock Origin Lite content blocker already installed for you.
 
 ![OhMyDebn chromium web browser with uBlock Origin Lite content blocker](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-chromium-ublock.png)
+If you prefer Google Chrome or Firefox, you can install them by going to [OhMyDebn Menu](#ohmydebn-menu) -> Install -> Browser.
 
 # OhMyDebn Logo
 
@@ -401,6 +404,10 @@ To start a text editor, press `Super + N`. This launches the beautiful and power
 
 The hotkeys section below includes more hotkeys for Neovim and a link to additional information.
 
+# Documents
+
+LibreOffice is installed to handle common file types like documents and spreadsheets. For PDF files, Evince is the default PDF viewer. If you need to annotate a PDF, you can use the included Xournal++.
+
 # Firewall
 
 OhMyDebn includes [ufw](https://help.ubuntu.com/community/UFW) and configures it to deny inbound traffic. For more information about ufw, please see https://help.ubuntu.com/community/UFW.
@@ -408,6 +415,10 @@ OhMyDebn includes [ufw](https://help.ubuntu.com/community/UFW) and configures it
 # Desktop Effects
 
 Desktop and window effects are enabled by default. If you would like to disable them, go to System Settings, click Effects, and then click the slider next to `Desktop and window effects` to disable.
+
+# Screen Magnifier
+
+If you need to zoom in on part of your screen, you can do so by enabling the magnifier via [OhMyDebn Menu](#ohmydebn-menu). Once enabled, hold down the Alt key and then use your scroll wheel to zoom in and out.
 
 # Hotkeys
 

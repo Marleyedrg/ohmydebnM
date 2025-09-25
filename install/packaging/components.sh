@@ -41,6 +41,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   vim \
   wget \
   xdotool \
+  xournalpp \
   yaru-theme-gtk \
   yaru-theme-icon \
   yq \

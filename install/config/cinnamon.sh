@@ -63,3 +63,11 @@ if [ ! -f $GTILE_CONFIG_STATE ]; then
   mkdir -p ~/.local/state/ohmydebn-config
   touch $GTILE_CONFIG_STATE
 fi
+
+NEMO_CONFIG_STATE=~/.local/state/ohmydebn-config/nemo-config-20250924
+if [ ! -f $NEMO_CONFIG_STATE ]; then
+  ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Configuring nemo file manager for list view"
+  gsettings set org.nemo.preferences default-folder-viewer 'list-view'
+  mkdir -p ~/.local/state/ohmydebn-config
+  touch $NEMO_CONFIG_STATE
+fi
