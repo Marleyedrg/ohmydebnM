@@ -404,6 +404,8 @@ To start a text editor, press `Super + N`. This launches the beautiful and power
 
 The hotkeys section below includes more hotkeys for Neovim and a link to additional information.
 
+You can also install VSCode from the OhMyDebn menu.
+
 # Documents
 
 LibreOffice is installed to handle common file types like documents and spreadsheets. For PDF files, Evince is the default PDF viewer. If you need to annotate a PDF, you can use the included Xournal++.
