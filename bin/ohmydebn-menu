@@ -54,22 +54,30 @@ install_from_url() {
 }
 
 install_vscode() {
-  ARCH=$(uname -m)
-  if [ "$ARCH" == "x86_64" ]; then
-    install_from_url "VSCode" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-  elif [ "$ARCH" == "aarch64" ]; then
-    install_from_url "VSCode" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64"
+  if dpkg -s code >/dev/null 2>&1; then
+    present_terminal "echo 'The code package is already installed.'"
   else
-    present_terminal "echo 'x86_64 and aarch64 are the only supported architectures!'"
+    ARCH=$(uname -m)
+    if [ "$ARCH" == "x86_64" ]; then
+      install_from_url "VSCode" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+    elif [ "$ARCH" == "aarch64" ]; then
+      install_from_url "VSCode" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64"
+    else
+      present_terminal "echo 'x86_64 and aarch64 are the only supported architectures!'"
+    fi
   fi
 }
 
 install_chrome() {
-  ARCH=$(uname -m)
-  if [ "$ARCH" == "x86_64" ]; then
-    install_from_url "Google Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+  if dpkg -s google-chrome-stable >/dev/null 2>&1; then
+    present_terminal "echo 'The google-chrome-stable package is already installed.'"
   else
-    present_terminal "echo 'Sorry, Google does not provide a Chrome package for your architecture!'"
+    ARCH=$(uname -m)
+    if [ "$ARCH" == "x86_64" ]; then
+      install_from_url "Google Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+    else
+      present_terminal "echo 'Sorry, Google does not provide a Chrome package for your architecture!'"
+    fi
   fi
 }
 
@@ -124,7 +132,7 @@ show_screenrecord_menu() {
 
 show_install_menu() {
   #case $(menu "Install" "  Package\n  Web App\n  TUI\n  Service\n  Style") in
-  case $(menu "Install" "  Package\n  Browser\n  Web App\n  TUI\n  Style\n  Editor") in
+  case $(menu "Install" "  Package\n󰖟  Browser\n  Web App\n  TUI\n  Style\n  Editor\n󰞍  Utility") in
   *Package*) terminal ohmydebn-pkg-install ;;
   *Browser*) show_install_browser_menu ;;
   *Web*) present_terminal ohmydebn-webapp-install ;;
@@ -132,13 +140,23 @@ show_install_menu() {
   *Style*) show_install_style_menu ;;
   *Development*) show_install_development_menu ;;
   *Editor*) show_install_editor_menu ;;
+  *Utility*) show_install_utility_menu ;;
   *) show_main_menu ;;
   esac
 }
 
+show_install_utility_menu() {
+  case $(menu "Install" "󰞍  Deskflow keyboard and mouse sharing") in
+  *Deskflow*) install "Deskflow" "deskflow" ;;
+  *) show_install_menu ;;
+  esac
+}
+
 show_install_browser_menu() {
-  case $(menu "Install" "  Google Chrome") in
+  case $(menu "Install" "  Chromium (installed by default)\n󰊯  Google Chrome\n  Firefox") in
+  *Chromium*) install "Chromium" "chromium" ;;
   *Chrome*) install_chrome ;;
+  *Firefox*) install "Firefox" "firefox-esr" ;;
   *) show_main_menu ;;
   esac
 }
@@ -247,7 +265,7 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n🔍 Screen Magnifier\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n󰍉  Screen Magnifier\n  System")"
 }
 
 go_to_menu() {
