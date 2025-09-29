@@ -155,7 +155,7 @@ OhMyDebn requires the following:
 - OhMyDebn is intended for a clean new installation
 - OhMyDebn may make changes to your APT configuration
 - OhMyDebn will remove apps like FireFox, Thunderbird, and others (unless you use the `--no-uninstall` option)
-- OhMyDebn is totally unsupported. If it breaks your system, you get to keep both pieces!
+- OhMyDebn is a fun project and is not officially supported. If it breaks your system, you get to keep both pieces!
 
 # Installation
 
@@ -403,6 +403,8 @@ To start a text editor, press `Super + N`. This launches the beautiful and power
 ![OhMyDebn Neovim screenshot](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-neovim.png)
 
 The hotkeys section below includes more hotkeys for Neovim and a link to additional information.
+
+You can also install VSCode from the OhMyDebn menu.
 
 # Documents
 
