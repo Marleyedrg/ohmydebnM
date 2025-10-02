@@ -197,7 +197,7 @@ Instead of starting from a Debian Live 13 Cinnamon ISO image, an alternative is 
 
 You can even run OhMyDebn on a Raspberry Pi! For best results, we recommend a Raspberry Pi 5 with SSD and at least 4GB RAM.
 
-The default OS for Raspberry Pi is Raspberry Pi OS. It is based on Debian but Debian 13 support is still in testing. You can download a Debian 13 based image from https://downloads.raspberrypi.com/nightlies/. Once it is configured and connected to the Internet, you can run our installer as shown above. It will automatically update /etc/lightdm/lightdm.conf to log into our Cinnamon desktop. Once our installer is complete, reboot and enjoy your new OhMyDebn desktop!
+The default OS for Raspberry Pi is Raspberry Pi OS and the latest version is based on Debian 13. Once you're running this version and are connected to the Internet, you can run our installer as shown above. It will automatically update /etc/lightdm/lightdm.conf to log into our Cinnamon desktop. Once our installer is complete, reboot and enjoy your new OhMyDebn desktop!
 
 If you are running an older Raspberry Pi or the desktop otherwise feels sluggish, consider disabling desktop effects. Instructions can be found later in a separate section below.
 
