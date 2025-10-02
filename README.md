@@ -139,6 +139,10 @@ Here's a Dell laptop that Microsoft says won't run Windows 11 but it runs OhMyDe
 
 ![OhMyDebn Dell laptop](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-dell-laptop.png)
 
+You can even run OhMyDebn on a Raspberry Pi! 
+
+![OhMyDebn on Raspberry Pi](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-raspberry-pi.png)
+
 # Requirements
 
 OhMyDebn requires the following:
@@ -194,10 +198,6 @@ Once installation completes, you can enjoy your new OhMyDebn desktop!
 Instead of starting from a Debian Live 13 Cinnamon ISO image, an alternative is to start from a Debian 13 minimal netinst installer on x86_64 or ARM64 hardware. Once the Debian netinst installer completes, reboot into your new installation and then start our installer as shown above. It will automatically install the necessary Cinnamon desktop packages and continue on with OhMyDebn installation. Once installation is complete, reboot and enjoy your new OhMyDebn desktop!
 
 ## Raspberry Pi
-
-You can even run OhMyDebn on a Raspberry Pi! 
-
-![OhMyDebn on Raspberry Pi](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-raspberry-pi.png)
 
 For best results, we recommend a Raspberry Pi 5 with SSD and at least 4GB RAM.
 
