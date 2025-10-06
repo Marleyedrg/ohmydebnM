@@ -46,3 +46,27 @@ if [ ! -f ~/.local/state/ohmydebn ]; then
   mkdir -p ~/.config/ohmydebn/current
   ~/.local/share/ohmydebn/bin/ohmydebn-theme-set Ohmydebn
 fi
+
+# Aether theme builder
+if [ ! -e ~/.config/omarchy ]; then
+  mkdir -p ~/.config
+  ln -s ~/.config/ohmydebn ~/.config/omarchy
+fi
+if [ ! -e ~/.local/bin/omarchy-theme-set ]; then
+  mkdir -p ~/.local/bin
+  ln -s ~/.local/share/ohmydebn/bin/ohmydebn-theme-set ~/.local/bin/omarchy-theme-set
+fi
+PYWAL_STATE=~/.local/state/ohmydebn-config/pywal-20251006
+if [ ! -f $PYWAL_STATE ]; then
+  pipx install pywal
+  touch $PYWAL_STATE
+fi
+if [ ! -d ~/.local/share/aether ]; then
+  mkdir -p ~/.local/share
+  cd ~/.local/share/
+  git clone https://github.com/bjarneo/aether
+else
+  cd ~/.local/share/aether
+  git pull
+fi
+cd - >/dev/null

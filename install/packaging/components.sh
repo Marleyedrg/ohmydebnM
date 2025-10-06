@@ -20,6 +20,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   gum \
   gvfs-backends \
   htop \
+  imagemagick \
   iperf3 \
   jq \
   keepassxc \
@@ -29,6 +30,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   neovim \
   openvpn \
   pdftk-java \
+  pipx \
   python-is-python3 \
   ripgrep \
   ristretto \
