@@ -59,6 +59,7 @@ fi
 PYWAL_STATE=~/.local/state/ohmydebn-config/pywal-20251006
 if [ ! -f $PYWAL_STATE ]; then
   pipx install pywal
+  pipx ensurepath
   touch $PYWAL_STATE
 fi
 if [ ! -d ~/.local/share/aether ]; then
