@@ -1,4 +1,4 @@
 #!/bin/bash
 
 PATH=$PATH:~/.local/bin/
-~/.local/share/aether/aether
+LD_PRELOAD=~/.local/share/GTK4-NoCSD/Source/libgtk4-nocsd.so ~/.local/share/aether/aether
