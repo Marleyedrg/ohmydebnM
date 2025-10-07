@@ -13,6 +13,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   ffmpeg \
   fzf \
   galculator \
+  gcc \
   gcolor3 \
   git \
   gimp \
@@ -20,15 +21,20 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   gum \
   gvfs-backends \
   htop \
+  imagemagick \
   iperf3 \
   jq \
   keepassxc \
   lazygit \
+  libadwaita-1-dev \
+  libgtk-4-dev \
   libnotify-bin \
   lshw \
   neovim \
   openvpn \
   pdftk-java \
+  pipx \
+  pkg-config \
   python-is-python3 \
   ripgrep \
   ristretto \
