@@ -317,15 +317,22 @@ For example, to lay out windows like in the following screenshot:
 
 # Desktop Themes
 
-You can change the desktop theme by pressing `Ctrl + Super + T`. This will bring up a list of installed themes including the default Ohmydebn theme and several themes from Omarchy. There are also three options at the end of the list titled `Next Background`, `Install New Theme`, and `Remove Theme`.
+You can change the desktop theme by pressing `Ctrl + Super + T`. This will bring up a list of installed themes including the default Ohmydebn theme and several themes from Omarchy. There are also options at the end of the list titled `Next Background`, `Install Theme from URL`, `Build New Theme`, and `Remove Theme`.
 
 ![OhMyDebn desktop themes](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-theme-set-gui.png)
 
 Some themes include multiple background options. If the theme you select has multiple backgrounds, you can switch to the next background by selecting the `Next Background` option from the menu. Alternatively, you can press `Ctrl + Super + B` at any time.
 
-The `Install New Theme` option allows you to install new themes from the Omarchy repo.
+The `Install Theme from URL` option allows you to install new themes from a URL.
 
 ![OhMyDebn theme install](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-theme-install.png)
+
+The `Build New Theme` option allows you to build your own theme using the [Aether](https://github.com/bjarneo/aether) theme builder.
+
+![OhMyDebn theme build 1](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-aether-1.png)
+![OhMyDebn theme build 2](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-aether-1.png)
+![OhMyDebn theme build 3](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-aether-1.png)
+![OhMyDebn theme build 4](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-aether-1.png)
 
 The `Remove Theme` option allows you to remove any extra themes that you've installed.
 
