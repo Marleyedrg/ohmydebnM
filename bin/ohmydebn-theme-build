@@ -1,5 +1,5 @@
 #!/bin/bash
 
 export PATH=$PATH:~/.local/bin/
-export LD_PRELOAD=~/.local/share/aether-ssd/aether-ssd.so
+export LD_PRELOAD=~/.local/share/aether-ssd/libaether-ssd.so
 ~/.local/share/aether/aether
