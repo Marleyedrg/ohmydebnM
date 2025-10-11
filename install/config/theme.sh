@@ -78,12 +78,14 @@ else
 fi
 cd - >/dev/null
 
-# Install GTK4-NoCSD to enable window decorations for Aether theme builder
-if [ ! -d ~/.local/share/GTK4-NoCSD ]; then
+# Install aether-ssd to enable window decorations for Aether theme builder
+rm -rf ~/.local/share/GTK4-NOCSD
+if [ ! -d ~/.local/share/aether-ssd ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share
-  git clone https://codeberg.org/MorsMortium/GTK4-NoCSD.git
-  cd GTK4-NoCSD/Source
-  gcc -fPIC -shared GTK4-NoCSD.c -o libgtk4-nocsd.so $(pkg-config --cflags --libs libadwaita-1)
+  git clone https://github.com/dougburks/aether-ssd
+  cd aether-ssd
+  make
+  cp gtk.css ~/.config/gtk-4.0/
   cd - >/dev/null
 fi
