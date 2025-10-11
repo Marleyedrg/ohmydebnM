@@ -79,7 +79,7 @@ fi
 cd - >/dev/null
 
 # Install aether-ssd to enable window decorations for Aether theme builder
-rm -rf ~/.local/share/GTK4-NOCSD
+rm -rf ~/.local/share/GTK4-NoCSD
 if [ ! -d ~/.local/share/aether-ssd ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share
