@@ -123,10 +123,9 @@ tokyo-night)
   # If the user has installed extra themes, then check to see if the theme specifies an icon theme
   # If so, then use the the icon theme to pick an appropriate color palette
   if [[ -f ~/.config/ohmydebn/current/theme/icons.theme ]]; then
-    THEME=$(cat ~/.config/ohmydebn/current/theme/icons.theme)
-    case $THEME in
+    ICON_THEME=$(cat ~/.config/ohmydebn/current/theme/icons.theme)
+    case $ICON_THEME in
     Yaru-red)
-      ICON_THEME="Mint-Y-Red"
       ROFI_THEME="$ROFI_DIR/square-red-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Rosepine-Light"
@@ -137,7 +136,6 @@ tokyo-night)
       fi
       ;;
     Yaru-blue)
-      ICON_THEME="Mint-Y-Blue"
       ROFI_THEME="$ROFI_DIR/square-blue-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Catppuccin-Light"
@@ -148,7 +146,6 @@ tokyo-night)
       fi
       ;;
     Yaru-sage | Yaru-olive | Yaru-prussiangreen)
-      ICON_THEME="Mint-Y"
       ROFI_THEME="$ROFI_DIR/square-green-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Everforest-Light"
@@ -159,7 +156,6 @@ tokyo-night)
       fi
       ;;
     Yaru-yellow)
-      ICON_THEME="Mint-Y-Sand"
       ROFI_THEME="$ROFI_DIR/square-yellow-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Gruvbox-Yellow-Light"
@@ -170,7 +166,6 @@ tokyo-night)
       fi
       ;;
     Yaru-magenta | Yaru-purple)
-      ICON_THEME="Mint-Y-Purple"
       ROFI_THEME="$ROFI_DIR/square-purple-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Tokyonight-Light"
