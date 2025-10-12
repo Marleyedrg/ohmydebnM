@@ -128,11 +128,11 @@ tokyo-night)
     Yaru-wartybrown)
       ROFI_THEME="$ROFI_DIR/square-gray-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
-        GTK_THEME="Gruvbox-Dark"
-        CINNAMON_THEME="Gruvbox-Dark"
-      else
         GTK_THEME="Gruvbox-Light"
         CINNAMON_THEME="Gruvbox-Light"
+      else
+        GTK_THEME="Gruvbox-Dark"
+        CINNAMON_THEME="Gruvbox-Dark"
       fi
       ;;
     Yaru-red)
