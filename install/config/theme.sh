@@ -74,7 +74,7 @@ if [ ! -d ~/.local/share/aether ]; then
   cd ~/.local/share/
   git clone https://github.com/bjarneo/aether
 else
-  eccho "Checking for updated version of aether"
+  echo "Checking for updated version of aether"
   cd ~/.local/share/aether
   git pull
 fi
