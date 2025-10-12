@@ -8,6 +8,7 @@ if [ ! -d ~/.local/share/omarchy ]; then
   git clone https://github.com/basecamp/omarchy.git
 else
   cd ~/.local/share/omarchy
+  echo "Checking for updated omarchy themes"
   git pull
 fi
 cd - >/dev/null
@@ -73,6 +74,7 @@ if [ ! -d ~/.local/share/aether ]; then
   cd ~/.local/share/
   git clone https://github.com/bjarneo/aether
 else
+  eccho "Checking for updated version of aether"
   cd ~/.local/share/aether
   git pull
 fi
