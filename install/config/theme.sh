@@ -53,13 +53,13 @@ if [ ! -e ~/.config/omarchy ]; then
   ln -s ~/.config/ohmydebn ~/.config/omarchy
 fi
 
-# Symlink omarchy-theme-set to ohmydebn-theme-set for Aether theme builder
+# Symlink omarchy-theme-set to ohmydebn-theme-set for Aether
 if [ ! -e ~/.local/bin/omarchy-theme-set ]; then
   mkdir -p ~/.local/bin
   ln -s ~/.local/share/ohmydebn/bin/ohmydebn-theme-set ~/.local/bin/omarchy-theme-set
 fi
 
-# Use pipx to install pywal for Aether theme builder
+# Use pipx to install pywal for Aether
 PYWAL_STATE=~/.local/state/ohmydebn-config/pywal-20251006
 if [ ! -f $PYWAL_STATE ]; then
   pipx install pywal
@@ -67,7 +67,7 @@ if [ ! -f $PYWAL_STATE ]; then
   touch $PYWAL_STATE
 fi
 
-# Install Aether theme builder
+# Install Aether
 if [ ! -d ~/.local/share/aether ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share/
@@ -78,8 +78,14 @@ else
 fi
 cd - >/dev/null
 
-# Install aether-ssd to enable window decorations for Aether theme builder
-rm -rf ~/.local/share/GTK4-NoCSD
+# Remove GTK4-NoCSD if it was previously installed
+NOCSD_DIR=~/.local/share/GTK4-NoCSD
+if [ -d $NOCSD_DIR ]; then
+  echo "Removing $NOCSD_DIR"
+  rm -rf $NOCSD_DIR
+fi
+
+# Install aether-ssd to enable window decorations for Aether
 if [ ! -d ~/.local/share/aether-ssd ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share
