@@ -8,8 +8,9 @@ if [ ! -d ~/.local/share/omarchy ]; then
   git clone https://github.com/basecamp/omarchy.git
 else
   cd ~/.local/share/omarchy
-  echo "Checking for updated omarchy themes"
+  echo "Checking for updated omarchy themes..."
   git pull
+  echo
 fi
 cd - >/dev/null
 
@@ -68,15 +69,16 @@ if [ ! -f $PYWAL_STATE ]; then
   touch $PYWAL_STATE
 fi
 
-# Install Aether
+# Install or update Aether
 if [ ! -d ~/.local/share/aether ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share/
   git clone https://github.com/bjarneo/aether
 else
-  echo "Checking for updated version of aether"
+  echo "Checking for updated version of aether..."
   cd ~/.local/share/aether
   git pull
+  echo
 fi
 cd - >/dev/null
 
