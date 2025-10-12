@@ -195,7 +195,7 @@ esac
 if [[ -f ~/.config/ohmydebn/current/theme/wofi.css ]]; then
   BORDER=$(grep "@define-color gray3" ~/.config/ohmydebn/current/theme/wofi.css | awk '{print $3}')
   cp $ROFI_DIR/square-blue-dark.rasi $ROFI_DIR/aether.rasi
-  sed -i "s|bg3:.*$|bg3:    $BORDER" $ROFI_DIR/aether.rasi
+  sed -i "s|bg3:.*$|bg3:    $BORDER|" $ROFI_DIR/aether.rasi
   ROFI_THEME="$ROFI_DIR/aether.rasi"
 fi
 
