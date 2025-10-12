@@ -92,6 +92,7 @@ if [ ! -d ~/.local/share/aether-ssd ]; then
   git clone https://github.com/dougburks/aether-ssd
   cd aether-ssd
   make
+  mkdir -p ~/.config/gtk-4.0
   cp gtk.css ~/.config/gtk-4.0/
   cd - >/dev/null
 fi
