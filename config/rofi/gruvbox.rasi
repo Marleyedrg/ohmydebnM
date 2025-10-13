@@ -1,0 +1,15 @@
+/* BASED ON ROUNDED THEME FOR ROFI */
+/* Original Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    bg0:    #121611;
+    bg1:    #121611;
+    bg2:    #121611;
+    bg3:    #94937d;
+    fg0:    #E6E6E6;
+    fg1:    #5C833C;
+    fg2:    #969696;
+    fg3:    #3D3D3D;
+}
+
+@import "template/aether-template.rasi"
