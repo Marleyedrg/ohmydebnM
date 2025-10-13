@@ -2,12 +2,12 @@
 /* Original Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    bg0:    #0e0e16;
-    bg1:    #0e0e16;
-    bg2:    #0e0e16;
-    bg3:    #9c8ea8;
+    bg0:    #1e1e2e;
+    bg1:    #1e1e2e;
+    bg2:    #1e1e2e;
+    bg3:    #45475a;
     fg0:    #E6E6E6;
-    fg1:    #B08ED0;
+    fg1:    #89b4fa;
     fg2:    #969696;
     fg3:    #3D3D3D;
 }
