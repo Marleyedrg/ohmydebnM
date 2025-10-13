@@ -191,12 +191,30 @@ tokyo-night)
   ;;
 esac
 
-# If using an aether theme, then pull the border color from its wofi.css and use that for rofi
-if [[ -f ~/.config/ohmydebn/current/theme/wofi.css ]]; then
-  BORDER=$(grep "@define-color gray3" ~/.config/ohmydebn/current/theme/wofi.css | awk '{print $3}')
-  cp $ROFI_DIR/square-blue-dark.rasi $ROFI_DIR/aether.rasi
-  sed -i "s|bg3:.*$|bg3:    $BORDER|" $ROFI_DIR/aether.rasi
-  ROFI_THEME="$ROFI_DIR/aether.rasi"
+# If using an aether theme, then pull the colors from its wofi.css and convert them for rofi
+WOFI_CSS=~/.config/ohmydebn/current/theme/wofi.css
+if [[ -f $WOFI_CSS ]]; then
+  BG=$(grep "@define-color bg" $WOFI_CSS | awk '{print $3}')
+  FG=$(grep "@define-color fg" $WOFI_CSS | awk '{print $3}')
+  GRAY1=$(grep "@define-color gray1" $WOFI_CSS | awk '{print $3}')
+  GRAY2=$(grep "@define-color gray2" $WOFI_CSS | awk '{print $3}')
+  GRAY3=$(grep "@define-color gray3" $WOFI_CSS | awk '{print $3}')
+  GRAY4=$(grep "@define-color gray4" $WOFI_CSS | awk '{print $3}')
+  GRAY5=$(grep "@define-color gray5" $WOFI_CSS | awk '{print $3}')
+  FB_BRIGHT=$(grep "@define-color fg_bright" $WOFI_CSS | awk '{print $3}')
+  AETHER_RASI=$ROFI_DIR/aether.rasi
+  cp $ROFI_DIR/square-blue-dark.rasi $AETHER_RASI
+  sed -i "s|bg0:.*$|bg0:    $BG|" $AETHER_RASI
+  sed -i "s|bg1:.*$|bg1:    $BG|" $AETHER_RASI
+  sed -i "s|bg2:.*$|bg2:    $BG|" $AETHER_RASI
+  sed -i "s|bg3:.*$|bg3:    $GRAY2|" $AETHER_RASI
+  sed -i "s|fg0:.*$|fg0:    $FG|" $AETHER_RASI
+  sed -i "s|fg1:.*$|fg1:    $GRAY3|" $AETHER_RASI
+  sed -i "s|fg2:.*$|fg2:    $FG|" $AETHER_RASI
+  sed -i "s|fg2:.*$|fg2:    $FG|" $AETHER_RASI
+  sed -i "s|fg3:.*$|fg3:    #3D3D3D;|" $AETHER_RASI
+  sed -i "s|square-template.rasi|aether-template.rasi|" $AETHER_RASI
+  ROFI_THEME="$AETHER_RASI"
 fi
 
 # use gsettings to update gtk theme, icon theme, and cinnamon theme
