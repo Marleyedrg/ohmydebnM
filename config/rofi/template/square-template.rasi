@@ -32,7 +32,7 @@ inputbar {
     border-color:       @bg3;
 
     border:         2px;
-    border-radius:  16px;
+    border-radius:  0;
 
     padding:    8px 16px;
     spacing:    8px;
@@ -72,7 +72,7 @@ listview {
 element {
     padding:        8px 16px;
     spacing:        8px;
-    border-radius:  16px;
+    border-radius:  0;
 }
 
 element normal active {

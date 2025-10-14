@@ -8,7 +8,9 @@ if [ ! -d ~/.local/share/omarchy ]; then
   git clone https://github.com/basecamp/omarchy.git
 else
   cd ~/.local/share/omarchy
+  echo "Checking for updated omarchy themes..."
   git pull
+  echo
 fi
 cd - >/dev/null
 
@@ -53,13 +55,13 @@ if [ ! -e ~/.config/omarchy ]; then
   ln -s ~/.config/ohmydebn ~/.config/omarchy
 fi
 
-# Symlink omarchy-theme-set to ohmydebn-theme-set for Aether theme builder
+# Symlink omarchy-theme-set to ohmydebn-theme-set for Aether
 if [ ! -e ~/.local/bin/omarchy-theme-set ]; then
   mkdir -p ~/.local/bin
   ln -s ~/.local/share/ohmydebn/bin/ohmydebn-theme-set ~/.local/bin/omarchy-theme-set
 fi
 
-# Use pipx to install pywal for Aether theme builder
+# Use pipx to install pywal for Aether
 PYWAL_STATE=~/.local/state/ohmydebn-config/pywal-20251006
 if [ ! -f $PYWAL_STATE ]; then
   pipx install pywal
@@ -67,23 +69,34 @@ if [ ! -f $PYWAL_STATE ]; then
   touch $PYWAL_STATE
 fi
 
-# Install Aether theme builder
+# Install or update Aether
 if [ ! -d ~/.local/share/aether ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share/
   git clone https://github.com/bjarneo/aether
 else
+  echo "Checking for updated version of aether..."
   cd ~/.local/share/aether
   git pull
+  echo
 fi
 cd - >/dev/null
 
-# Install GTK4-NoCSD to enable window decorations for Aether theme builder
-if [ ! -d ~/.local/share/GTK4-NoCSD ]; then
+# Remove GTK4-NoCSD if it was previously installed
+NOCSD_DIR=~/.local/share/GTK4-NoCSD
+if [ -d $NOCSD_DIR ]; then
+  echo "Removing $NOCSD_DIR"
+  rm -rf $NOCSD_DIR
+fi
+
+# Install aether-ssd to enable window decorations for Aether
+if [ ! -d ~/.local/share/aether-ssd ]; then
   mkdir -p ~/.local/share
   cd ~/.local/share
-  git clone https://codeberg.org/MorsMortium/GTK4-NoCSD.git
-  cd GTK4-NoCSD/Source
-  gcc -fPIC -shared GTK4-NoCSD.c -o libgtk4-nocsd.so $(pkg-config --cflags --libs libadwaita-1)
+  git clone https://github.com/dougburks/aether-ssd
+  cd aether-ssd
+  make
+  mkdir -p ~/.config/gtk-4.0
+  cp gtk.css ~/.config/gtk-4.0/
   cd - >/dev/null
 fi

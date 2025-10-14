@@ -35,9 +35,9 @@ ROFI_DIR=~/.config/rofi
 
 # Define default themes for gtk, icon, cinnamon, and rofi
 GTK_THEME="Catppuccin-Dark"
-ICON_THEME="Catppuccin-Mocha-Alt2"
+ICON_THEME="Mint-Y-Grey"
 CINNAMON_THEME="Catppuccin-Dark"
-ROFI_THEME="$ROFI_DIR/square-white.rasi"
+ROFI_THEME="$ROFI_DIR/square-gray-dark.rasi"
 
 # Override those settings for our default OhMyDebn/Omarchy themes
 case $THEME_NAME in
@@ -51,7 +51,7 @@ catppuccin)
   GTK_THEME="Catppuccin-Dark"
   ICON_THEME="Catppuccin-Mocha"
   CINNAMON_THEME="Catppuccin-Dark"
-  ROFI_THEME="$ROFI_DIR/square-purple-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/catppuccin.rasi"
   ;;
 catppuccin-latte)
   GTK_THEME="Catppuccin-Light"
@@ -63,25 +63,25 @@ everforest)
   GTK_THEME="Everforest-Dark"
   ICON_THEME="Everforest-Dark"
   CINNAMON_THEME="Everforest-Dark"
-  ROFI_THEME="$ROFI_DIR/square-green-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/everforest.rasi"
   ;;
 gruvbox)
   GTK_THEME="Gruvbox-Dark"
   ICON_THEME="gruvbox_dark"
   CINNAMON_THEME="Gruvbox-Dark"
-  ROFI_THEME="$ROFI_DIR/square-green-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/gruvbox.rasi"
   ;;
 kanagawa)
   GTK_THEME="Kanagawa-Dark"
   ICON_THEME="Kanagawa"
   CINNAMON_THEME="Kanagawa-Dark"
-  ROFI_THEME="$ROFI_DIR/square-blue-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/kanagawa.rasi"
   ;;
 matte-black)
   GTK_THEME="Gruvbox-Yellow-Dark"
   ICON_THEME="Mint-Y-Sand"
   CINNAMON_THEME="Gruvbox-Yellow-Dark"
-  ROFI_THEME="$ROFI_DIR/square-orange-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/matte-black.rasi"
   ;;
 nord)
   GTK_THEME="Catppuccin-Dark-Macchiato"
@@ -99,13 +99,13 @@ osaka-jade)
   GTK_THEME="Osaka-Teal-Dark"
   ICON_THEME="Osaka_Dark"
   CINNAMON_THEME="Osaka-Teal-Dark"
-  ROFI_THEME="$ROFI_DIR/square-green-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/osaka-jade.rasi"
   ;;
 ristretto)
   GTK_THEME="Gruvbox-Dark"
   ICON_THEME="Mint-Y-Sand"
   CINNAMON_THEME="Gruvbox-Dark"
-  ROFI_THEME="$ROFI_DIR/square-orange-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/ristretto.rasi"
   ;;
 rose-pine)
   GTK_THEME="Rosepine-Light"
@@ -117,16 +117,25 @@ tokyo-night)
   GTK_THEME="Tokyonight-Dark"
   ICON_THEME="Tokyonight-Dark"
   CINNAMON_THEME="Tokyonight-Dark"
-  ROFI_THEME="$ROFI_DIR/square-purple-dark.rasi"
+  ROFI_THEME="$ROFI_DIR/tokyo-night.rasi"
   ;;
 *)
   # If the user has installed extra themes, then check to see if the theme specifies an icon theme
   # If so, then use the the icon theme to pick an appropriate color palette
   if [[ -f ~/.config/ohmydebn/current/theme/icons.theme ]]; then
-    THEME=$(cat ~/.config/ohmydebn/current/theme/icons.theme)
-    case $THEME in
+    ICON_THEME=$(cat ~/.config/ohmydebn/current/theme/icons.theme)
+    case $ICON_THEME in
+    Yaru-wartybrown)
+      ROFI_THEME="$ROFI_DIR/square-gray-dark.rasi"
+      if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
+        GTK_THEME="Gruvbox-Light"
+        CINNAMON_THEME="Gruvbox-Light"
+      else
+        GTK_THEME="Gruvbox-Dark"
+        CINNAMON_THEME="Gruvbox-Dark"
+      fi
+      ;;
     Yaru-red)
-      ICON_THEME="Rose-Pine"
       ROFI_THEME="$ROFI_DIR/square-red-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Rosepine-Light"
@@ -137,7 +146,6 @@ tokyo-night)
       fi
       ;;
     Yaru-blue)
-      ICON_THEME="Catppuccin-Mocha-Alt2"
       ROFI_THEME="$ROFI_DIR/square-blue-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Catppuccin-Light"
@@ -148,7 +156,6 @@ tokyo-night)
       fi
       ;;
     Yaru-sage | Yaru-olive | Yaru-prussiangreen)
-      ICON_THEME="Everforest-Dark"
       ROFI_THEME="$ROFI_DIR/square-green-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Everforest-Light"
@@ -170,7 +177,6 @@ tokyo-night)
       fi
       ;;
     Yaru-magenta | Yaru-purple)
-      ICON_THEME="Tokyonight-Dark"
       ROFI_THEME="$ROFI_DIR/square-purple-dark.rasi"
       if [ -f ~/.config/ohmydebn/current/theme/light.mode ]; then
         GTK_THEME="Tokyonight-Light"
@@ -184,6 +190,38 @@ tokyo-night)
   fi
   ;;
 esac
+
+# If using an aether theme, then pull the colors from its wofi.css and convert them for rofi
+WOFI_CSS=~/.config/ohmydebn/current/theme/wofi.css
+if [[ -f $WOFI_CSS ]]; then
+  BG=$(grep "@define-color bg" $WOFI_CSS | awk '{print $3}')
+  FG=$(grep "@define-color fg" $WOFI_CSS | awk '{print $3}')
+  GRAY1=$(grep "@define-color gray1" $WOFI_CSS | awk '{print $3}')
+  GRAY2=$(grep "@define-color gray2" $WOFI_CSS | awk '{print $3}')
+  GRAY3=$(grep "@define-color gray3" $WOFI_CSS | awk '{print $3}')
+  GRAY4=$(grep "@define-color gray4" $WOFI_CSS | awk '{print $3}')
+  GRAY5=$(grep "@define-color gray5" $WOFI_CSS | awk '{print $3}')
+  FG_BRIGHT=$(grep "@define-color fg_bright" $WOFI_CSS | awk '{print $3}')
+  AETHER_RASI=$ROFI_DIR/aether.rasi
+  cp $ROFI_DIR/square-nord-dark.rasi $AETHER_RASI
+  # bg0 - window background color
+  sed -i "s|bg0:.*$|bg0:    $BG|" $AETHER_RASI
+  # bg1 - inputbar background color
+  sed -i "s|bg1:.*$|bg1:    $BG|" $AETHER_RASI
+  # bg2 - message background color
+  sed -i "s|bg2:.*$|bg2:    $BG|" $AETHER_RASI
+  # bg3 - border color for window and inputbar
+  sed -i "s|bg3:.*$|bg3:    $GRAY3|" $AETHER_RASI
+  # fg0 - text color
+  sed -i "s|fg0:.*$|fg0:    $FG|" $AETHER_RASI
+  # fg1 - not used currently
+  sed -i "s|fg1:.*$|fg1:    $FG|" $AETHER_RASI
+  # fg2 - inputbar prompt color
+  sed -i "s|fg2:.*$|fg2:    $GRAY1|" $AETHER_RASI
+  # fg3 - inputbar placeholder color
+  sed -i "s|fg3:.*$|fg3:    #3D3D3D;|" $AETHER_RASI
+  ROFI_THEME="$AETHER_RASI"
+fi
 
 # use gsettings to update gtk theme, icon theme, and cinnamon theme
 gsettings set org.cinnamon.desktop.interface gtk-theme "$GTK_THEME"
