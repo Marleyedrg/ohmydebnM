@@ -2,14 +2,18 @@
 /* Original Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    bg0:    #1f1f28;
-    bg1:    #1f1f28;
-    bg2:    #1f1f28;
-    bg3:    #363646;
-    fg0:    #E6E6E6;
-    fg1:    #7e9cd8;
-    fg2:    #969696;
+    bg0:    #0f121c;
+    bg1:    #0f121c;
+    bg2:    #0f121c;
+    bg3:    #D8C5A8;
+    fg0:    #D8DEE9;
+    fg1:    #ECEFF4;
+    fg2:    #9CA5A1;
     fg3:    #3D3D3D;
 }
 
 @import "template/square-template.rasi"
+
+element selected {
+    text-color: @bg1;
+}

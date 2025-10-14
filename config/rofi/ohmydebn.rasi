@@ -5,11 +5,15 @@
     bg0:    #07043B;
     bg1:    #07043B;
     bg2:    #07043B;
-    bg3:    #8789a3;
-    fg0:    #E6E6E6;
-    fg1:    #15A8EA;
-    fg2:    #969696;
+    bg3:    #15A8EA;
+    fg0:    #D8DEE9;
+    fg1:    #ECEFF4;
+    fg2:    #4952C4;
     fg3:    #3D3D3D;
 }
 
 @import "template/square-template.rasi"
+
+element selected {
+    text-color: @bg1;
+}
