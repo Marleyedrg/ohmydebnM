@@ -201,19 +201,25 @@ if [[ -f $WOFI_CSS ]]; then
   GRAY3=$(grep "@define-color gray3" $WOFI_CSS | awk '{print $3}')
   GRAY4=$(grep "@define-color gray4" $WOFI_CSS | awk '{print $3}')
   GRAY5=$(grep "@define-color gray5" $WOFI_CSS | awk '{print $3}')
-  FB_BRIGHT=$(grep "@define-color fg_bright" $WOFI_CSS | awk '{print $3}')
+  FG_BRIGHT=$(grep "@define-color fg_bright" $WOFI_CSS | awk '{print $3}')
   AETHER_RASI=$ROFI_DIR/aether.rasi
-  cp $ROFI_DIR/square-blue-dark.rasi $AETHER_RASI
+  cp $ROFI_DIR/square-nord-dark.rasi $AETHER_RASI
+  # bg0 - window background color
   sed -i "s|bg0:.*$|bg0:    $BG|" $AETHER_RASI
+  # bg1 - inputbar background color
   sed -i "s|bg1:.*$|bg1:    $BG|" $AETHER_RASI
+  # bg2 - message background color
   sed -i "s|bg2:.*$|bg2:    $BG|" $AETHER_RASI
-  sed -i "s|bg3:.*$|bg3:    $GRAY2|" $AETHER_RASI
+  # bg3 - border color for window and inputbar
+  sed -i "s|bg3:.*$|bg3:    $GRAY3|" $AETHER_RASI
+  # fg0 - text color
   sed -i "s|fg0:.*$|fg0:    $FG|" $AETHER_RASI
-  sed -i "s|fg1:.*$|fg1:    $GRAY3|" $AETHER_RASI
-  sed -i "s|fg2:.*$|fg2:    $FG|" $AETHER_RASI
-  sed -i "s|fg2:.*$|fg2:    $FG|" $AETHER_RASI
+  # fg1 - not used currently
+  sed -i "s|fg1:.*$|fg1:    $FG|" $AETHER_RASI
+  # fg2 - inputbar prompt color
+  sed -i "s|fg2:.*$|fg2:    $GRAY1|" $AETHER_RASI
+  # fg3 - inputbar placeholder color
   sed -i "s|fg3:.*$|fg3:    #3D3D3D;|" $AETHER_RASI
-  sed -i "s|square-template.rasi|aether-template.rasi|" $AETHER_RASI
   ROFI_THEME="$AETHER_RASI"
 fi
 
