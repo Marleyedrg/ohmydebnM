@@ -12,4 +12,4 @@
     fg3:    #3D3D3D;
 }
 
-@import "template/aether-template.rasi"
+@import "template/square-template.rasi"
