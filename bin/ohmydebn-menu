@@ -86,9 +86,7 @@ install_and_launch() {
 }
 
 show_learn_menu() {
-  case $(menu "Learn" "  Keybindings\n  OhMyDebn\n  Cinnamon\n  Debian\n  Neovim\n󱆃  Bash") in
-  *Keybindings*) ohmydebn-launch-webapp "https://github.com/dougburks/ohmydebn?tab=readme-ov-file#hotkeys" ;;
-  *OhMyDebn*) ohmydebn-launch-webapp "https://ohmydebn.org" ;;
+  case $(menu "Learn" "  Cinnamon\n  Debian\n  Neovim\n󱆃  Bash") in
   *Cinnamon*) ohmydebn-launch-webapp "https://github.com/linuxmint/cinnamon" ;;
   *Debian*) ohmydebn-launch-webapp "https://wiki.debian.org/" ;;
   *Bash*) ohmydebn-launch-webapp "https://devhints.io/bash" ;;
@@ -265,7 +263,7 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  Demo\n󰍉  Screen Magnifier\n  System")"
+  go_to_menu "$(menu "Go" "󰧑  Learn\n  Capture\n  Style\n󰉉  Install\n󰭌  Remove\n  System")"
 }
 
 go_to_menu() {

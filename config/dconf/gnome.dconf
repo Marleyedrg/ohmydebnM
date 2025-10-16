@@ -1,0 +1,155 @@
+[cheese]
+burst-delay=1000
+camera='HD User Facing: HD User Facing'
+photo-x-resolution=1280
+photo-y-resolution=720
+video-x-resolution=1280
+video-y-resolution=720
+
+[deja-dup]
+backend='google'
+prompt-check='2025-10-14T19:11:18.881124Z'
+
+[desktop/a11y]
+always-show-text-caret=false
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[desktop/input-sources]
+current=uint32 0
+show-all-sources=false
+sources=@a(ss) []
+xkb-options=@as []
+
+[desktop/interface]
+can-change-accels=false
+clock-show-date=false
+clock-show-seconds=false
+cursor-blink=true
+cursor-blink-time=1200
+cursor-blink-timeout=10
+cursor-size=5
+cursor-theme='Yaru'
+enable-animations=true
+font-name='Sans 9'
+gtk-color-palette='black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'
+gtk-color-scheme=''
+gtk-enable-primary-paste=true
+gtk-im-module=''
+gtk-im-preedit-style='callback'
+gtk-im-status-style='callback'
+gtk-key-theme='Default'
+gtk-theme='Gruvbox-Yellow-Dark'
+gtk-timeout-initial=200
+gtk-timeout-repeat=20
+icon-theme='Mint-Y-Sand'
+menubar-accel='F10'
+menubar-detachable=false
+menus-have-tearoff=false
+scaling-factor=uint32 0
+text-scaling-factor=1.0
+toolbar-detachable=false
+toolbar-icons-size='large'
+toolbar-style='both-horiz'
+toolkit-accessibility=false
+
+[desktop/peripherals/mouse]
+accel-profile='default'
+double-click=400
+drag-threshold=8
+left-handed=false
+middle-click-emulation=false
+natural-scroll=false
+speed=0.0
+
+[desktop/privacy]
+disable-camera=false
+disable-microphone=false
+disable-sound-output=false
+old-files-age=uint32 30
+recent-files-max-age=7
+remember-recent-files=true
+remove-old-temp-files=false
+remove-old-trash-files=false
+
+[desktop/sound]
+event-sounds=false
+input-feedback-sounds=false
+theme-name='freedesktop'
+
+[desktop/wm/preferences]
+action-double-click-titlebar='toggle-maximize'
+action-middle-click-titlebar='lower'
+action-right-click-titlebar='toggle-maximize'
+audible-bell=false
+auto-raise=true
+auto-raise-delay=500
+button-layout=':close'
+disable-workarounds=false
+focus-mode='sloppy'
+focus-new-windows='smart'
+mouse-button-modifier=''
+num-workspaces=4
+raise-on-click=true
+resize-with-right-button=true
+theme='Default'
+titlebar-font='Sans Bold 10'
+titlebar-uses-system-font=false
+visual-bell=false
+visual-bell-type='fullscreen-flash'
+workspace-names=@as []
+
+[evolution-data-server]
+migrated=true
+
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=62
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[gedit/preferences/editor]
+display-line-numbers=false
+highlight-current-line=false
+
+[gedit/preferences/ui]
+theme-variant='light'
+
+[gedit/state/window]
+bottom-panel-size=140
+height=700
+maximized=false
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+width=900
+
+[settings-daemon/plugins/xsettings]
+disabled-gtk-modules=@as []
+enabled-gtk-modules=@as []
+overrides=@a{sv} {}
+
+[software]
+check-timestamp=int64 1760537101
+first-run=false
+update-notification-timestamp=int64 1760469010
+
+[terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='#2E3436'
+foreground-color='#D3D7CF'
+palette=['#2e3436', '#cc0000', '#4e9a06', '#c4a000', '#3465a4', '#75507b', '#06989a', '#d3d7cf', '#555753', '#ef2929', '#8ae234', '#fce94f', '#729fcf', '#ad7fa8', '#34e2e2', '#eeeeec']
+use-theme-colors=false

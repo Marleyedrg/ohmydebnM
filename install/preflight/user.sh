@@ -10,5 +10,5 @@ run this as a normal user that has sudo privileges.
 Press Enter if you are sure you want to continue as root
 or Ctrl-c to cancel."
 
-  read input
+  read -r _
 fi

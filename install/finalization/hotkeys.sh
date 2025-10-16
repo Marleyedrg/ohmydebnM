@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source $OHMYDEBN_INSTALL/keybinding/keybinding.sh
+source "$OHMYDEBN_INSTALL/keybinding/keybinding.sh"

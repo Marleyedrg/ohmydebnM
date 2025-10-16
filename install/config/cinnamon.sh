@@ -43,27 +43,6 @@ if [ ! -f $SPICE_STATE ]; then
   touch $SPICE_STATE
 fi
 
-GTILE_EXTENSION_STATE=~/.local/state/ohmydebn-config/gTile-extension-20250922
-if [ ! -f $GTILE_EXTENSION_STATE ]; then
-  ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Installing gTile extension"
-  rm -rf ~/.local/share/cinnamon/extensions/gTile@OhMyDebn
-  mkdir -p ~/.local/share/cinnamon/extensions
-  git clone https://github.com/dougburks/gTile-OhMyDebn ~/.local/share/cinnamon/extensions/gTile@OhMyDebn
-  mkdir -p ~/.local/state/ohmydebn-config
-  touch $GTILE_EXTENSION_STATE
-fi
-
-GTILE_CONFIG_STATE=~/.local/state/ohmydebn-config/gTile-config-20250920
-if [ ! -f $GTILE_CONFIG_STATE ]; then
-  ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Configuring gTile extension"
-  SPICE_DIR=~/.config/cinnamon/spices/gTile@OhMyDebn
-  mkdir -p $SPICE_DIR
-  cp -av ~/.local/share/ohmydebn/config/cinnamon/spices/gTile@OhMyDebn/* $SPICE_DIR
-  gsettings set org.cinnamon enabled-extensions "['gTile@OhMyDebn']"
-  mkdir -p ~/.local/state/ohmydebn-config
-  touch $GTILE_CONFIG_STATE
-fi
-
 NEMO_CONFIG_STATE=~/.local/state/ohmydebn-config/nemo-config-20250924
 if [ ! -f $NEMO_CONFIG_STATE ]; then
   ~/.local/share/ohmydebn/bin/ohmydebn-headline "cat" "Configuring nemo file manager for list view"

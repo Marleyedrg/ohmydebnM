@@ -9,5 +9,5 @@ if [ ! -f ~/.local/state/ohmydebn ]; then
 - OhMyDebn is totally unsupported. If it breaks your system, you get to keep both pieces!
 
 Press Enter to continue or Ctrl-c to cancel."
-  read input
+  read -r _
 fi

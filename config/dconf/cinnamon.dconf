@@ -1,0 +1,261 @@
+[/]
+alttab-minimized-aware=false
+alttab-switcher-delay=100
+alttab-switcher-enforce-primary-monitor=false
+alttab-switcher-show-all-workspaces=true
+alttab-switcher-style='preview'
+alttab-switcher-warp-mouse-pointer=true
+desktop-effects-close='fly'
+desktop-effects-map='fly'
+desktop-effects-minimize='fly'
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:3:window-list@cinnamon.org:12', 'panel1:right:0:systray@cinnamon.org:3', 'panel1:right:1:xapp-status@cinnamon.org:4', 'panel1:right:2:notifications@cinnamon.org:5', 'panel1:right:3:printers@cinnamon.org:6', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:right:5:keyboard@cinnamon.org:8', 'panel1:right:6:favorites@cinnamon.org:9', 'panel1:right:7:network@cinnamon.org:10', 'panel1:right:8:sound@cinnamon.org:11', 'panel1:right:9:power@cinnamon.org:12', 'panel1:center:0:calendar@cinnamon.org:13', 'panel1:left:2:workspace-switcher@cinnamon.org:10']
+enabled-extensions=@as []
+next-applet-id=15
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":22}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 12}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:top']
+panels-height=['1:30', '2:38']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+window-effect-speed=1
+workspace-expo-view-as-grid=false
+workspace-osd-visible=false
+
+[desktop/a11y/applications]
+screen-magnifier-enabled=true
+
+[desktop/a11y/magnifier]
+mag-factor=1.0
+mouse-tracking='push'
+screen-position='full-screen'
+
+[desktop/applications/terminal]
+exec='alacritty'
+exec-arg='--'
+
+[desktop/background]
+picture-uri='file:///home/marley/.config/ohmydebn/themes/cobalt2/backgrounds/01_a_car_on_a_road_with_orange_clouds_in_the_sky.jpg'
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=5
+cursor-theme='Yaru'
+gtk-overlay-scrollbars=false
+gtk-theme='Gruvbox-Yellow-Dark'
+icon-theme='Mint-Y-Sand'
+
+[desktop/keybindings]
+custom-list=['custom-0', 'custom-2', 'custom-5', 'custom-9', 'custom-11', 'custom-12', 'custom-13', 'custom-14', 'custom-15', 'custom-17', 'custom-20', 'custom1']
+
+[desktop/keybindings/custom-keybindings/custom-0]
+binding=['<Super>B']
+command='/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=launch-script.sh --file-forwarding app.zen_browser.zen '
+name='Browser'
+
+[desktop/keybindings/custom-keybindings/custom-10]
+binding=['<Ctrl><Shift>A']
+command="/usr/bin/alacritty --title 'cava audio visualizer' -e /usr/bin/cava"
+name='cava audio visualizer'
+
+[desktop/keybindings/custom-keybindings/custom-11]
+binding=['<Ctrl><Shift>K']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-keepass'
+name='KeePassXC'
+
+[desktop/keybindings/custom-keybindings/custom-12]
+binding=['<Ctrl><Shift>O']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-logo-gui'
+name='OhMyDebn Logo'
+
+[desktop/keybindings/custom-keybindings/custom-13]
+binding=['<Ctrl><Shift>S']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-screenfetch-gui'
+name='screenfetch'
+
+[desktop/keybindings/custom-keybindings/custom-14]
+binding=['<Ctrl><Super>T']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-theme-set-gui'
+name='Theme selector'
+
+[desktop/keybindings/custom-keybindings/custom-15]
+binding=['<Ctrl><Super>B']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-theme-bg-next'
+name='Background selector'
+
+[desktop/keybindings/custom-keybindings/custom-16]
+binding=['<Ctrl><Alt>Tab']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-rofi-window-switcher'
+name='Rofi window switcher'
+
+[desktop/keybindings/custom-keybindings/custom-17]
+binding=['<Ctrl><Alt>D']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-demo-gui'
+name='OhMyDebn Demo'
+
+[desktop/keybindings/custom-keybindings/custom-2]
+binding=['<Super>E']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-launch-webapp https://mail.google.com'
+name='GMail'
+
+[desktop/keybindings/custom-keybindings/custom-20]
+binding=['<Super><Alt>Space']
+command='/home/marley/.local/share/ohmydebn/bin/ohmydebn-menu'
+name='OhMyDebn menu'
+
+[desktop/keybindings/custom-keybindings/custom-5]
+binding=['<Super>N']
+command="/usr/bin/alacritty --title 'nvim' -e nvim"
+name='Neovim'
+
+[desktop/keybindings/custom-keybindings/custom-6]
+binding=['<Super>space']
+command='/usr/bin/rofi -dpi 1 -show drun -show-icons'
+name='Rofi'
+
+[desktop/keybindings/custom-keybindings/custom-9]
+binding=['<Super>t']
+command='/usr/bin/alacritty'
+name='Alacritty'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Primary>o']
+command='nohup /home/marley/4.scripts/launch_anki_and_watch.sh & '
+name='open script'
+
+[desktop/keybindings/media-keys]
+calculator=['XF86Calculator', 'Caps_Lock']
+hibernate=['XF86Hibernate']
+home=['XF86Explorer', '<Super>F']
+screensaver=['<Control><Alt>l']
+search=@as []
+shutdown=['<Control><Alt>End', 'PowerOff']
+suspend=@as []
+video-rotation-lock=['<Primary><Shift><Super>o']
+www=['<Super>b']
+
+[desktop/keybindings/wm]
+close=['<Alt>F4', '<Super>w']
+maximize=['<Super>Up']
+minimize=@as []
+move-to-center=@as []
+move-to-side-n=@as []
+push-tile-down=@as []
+push-tile-up=@as []
+switch-panels=['']
+switch-panels-backward=['']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-down=['<Alt>Tab']
+switch-windows=['<Alt><Super>Right']
+switch-windows-backward=['<Alt><Super>Left']
+toggle-maximized=['<Super>Page_Up']
+unmaximize=['<Alt>F5', '<Super>Down']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+numlock-state=true
+repeat-interval=uint32 30
+
+[desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+speed=0.0
+
+[desktop/peripherals/touchpad]
+natural-scroll=false
+speed=0.0
+
+[desktop/sound]
+event-sounds=false
+volume-sound-enabled=true
+volume-sound-file='/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga'
+
+[desktop/wm/preferences]
+action-right-click-titlebar='toggle-maximize'
+auto-raise=true
+button-layout=':close'
+focus-mode='sloppy'
+min-window-opacity=30
+mouse-button-modifier=''
+mouse-button-zoom-modifier=''
+
+[gestures]
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_OVERVIEW::end'
+swipe-down-4='VOLUME_DOWN::end'
+swipe-left-2='PUSH_TILE_LEFT::end'
+swipe-left-3='WORKSPACE_NEXT::end'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-right-2='PUSH_TILE_RIGHT::end'
+swipe-right-3='WORKSPACE_PREVIOUS::end'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::end'
+swipe-up-3='TOGGLE_EXPO::end'
+swipe-up-4='VOLUME_UP::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[muffin]
+attach-modal-dialogs=true
+bring-windows-to-current-workspace=true
+draggable-border-width=2
+edge-tiling=true
+experimental-features=['scale-monitor-framebuffer', 'x11-randr-fractional-scaling']
+placement-mode='center'
+tile-maximize=true
+workspace-cycle=false
+workspaces-only-on-primary=false
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(-12.59, -38.310000000000002)
+
+[settings-daemon/plugins/power]
+button-power='interactive'
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+lid-close-suspend-with-external-monitor=true
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=false
+menus-have-icons=false
+
+[sounds]
+close-enabled=true
+close-file='/usr/share/sounds/freedesktop/stereo/message-new-instant.oga'
+login-enabled=true
+login-file='/usr/share/sounds/sound-icons/beginning-of-line'
+logout-enabled=true
+logout-file='/usr/share/sounds/sound-icons/beginning-of-line'
+map-enabled=true
+map-file='/usr/share/sounds/freedesktop/stereo/complete.oga'
+maximize-enabled=false
+maximize-file='/usr/share/sounds/freedesktop/stereo/complete.oga'
+minimize-enabled=true
+minimize-file='/usr/share/sounds/freedesktop/stereo/service-login.oga'
+notification-enabled=true
+notification-file='/usr/share/sounds/freedesktop/stereo/message-new-instant.oga'
+plug-enabled=true
+plug-file='/usr/share/sounds/sound-icons/guitar-12.wav'
+tile-enabled=true
+tile-file='/usr/share/sounds/freedesktop/stereo/device-added.oga'
+unmaximize-enabled=true
+unmaximize-file='/usr/share/sounds/freedesktop/stereo/device-removed.oga'
+unplug-enabled=true
+unplug-file='/usr/share/sounds/sound-icons/guitar-13.wav'
+
+[theme]
+name='Gruvbox-Yellow-Dark'

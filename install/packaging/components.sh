@@ -6,8 +6,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   bibata-cursor-theme \
   binutils \
   btop \
-  cava \
-  chromium \
   curl \
   eza \
   ffmpeg \
@@ -38,7 +36,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   python-is-python3 \
   ripgrep \
   ristretto \
-  rofi \
   screenfetch \
   shellcheck \
   starship \
@@ -53,6 +50,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install alacritty \
   yq \
   zip \
   zoxide \
-  zsh \
-  zsh-autosuggestions \
-  zsh-syntax-highlighting
+  unzip \
+  flatpak \
+  gnome-tweaks \
+  gnome-screenshot \
+  nodejs

@@ -12,7 +12,7 @@ bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
 italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
 
 [terminal]
-shell = "/usr/bin/zsh"
+shell = "/usr/bin/bash"
 
 [window]
 opacity = 0.97  # Values from 0.0 (fully transparent) to 1.0 (opaque)
