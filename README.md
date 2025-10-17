@@ -83,18 +83,6 @@ The OhMyDebn menu allows you to launch apps, learn about OhMyDebn, and configure
 
 ![OhMyDebn Menu](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-menu.png)
 
-# Launch applications via Rofi
-
-To run applications, you can select `Apps` from the OhMyDebn menu or just press `Super + Space` to bring up the Rofi application launcher directly. You can then use arrow keys to select which application you'd like to run or start typing the first few letters of the application name.
-
-![OhMyDebn Rofi](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-rofi.png)
-
-# Web browser
-
-To start a web browser, you can open it from the traditional program menu, from the Rofi application launcher, or just press `Super + B`. This launches [Chromium](https://www.chromium.org/Home/) with the uBlock Origin Lite content blocker already installed for you.
-
-![OhMyDebn chromium web browser with uBlock Origin Lite content blocker](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-chromium-ublock.png)
-If you prefer Google Chrome or Firefox, you can install them by going to [OhMyDebn Menu](#ohmydebn-menu) -> Install -> Browser.
 
 # OhMyDebn Logo
 
@@ -116,15 +104,8 @@ To see a system summary, press `Ctrl + Shift + S` to launch screenfetch.
 
 # System monitoring via btop
 
-To monitor your system performance, press `Super + T` to launch btop.
-
 ![OhMyDebn btop](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-btop.png)
 
-# Audio visualizer via Cava
-
-To visualize your system audio, press `Ctrl + Shift + A` to launch Cava.
-
-![OhMyDebn Cava audio visualizer](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-cava-audio.png)
 # Window Tiling
 
 The Cinnamon desktop environment includes basic window tiling:
@@ -137,39 +118,6 @@ The Cinnamon desktop environment includes basic window tiling:
 
 ![OhMyDebn Cinnamon window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-cinnamon-tiling.png)
 
-For more advanced window tiling options, we've included a custom version of the gTile extension:
-- Pressing `Ctrl-Shift-G` will display the gTile overlay and give you several options for tiling the active window.
-- The default grid options are 2x2, 3x2, 4x4, or 6x6. You can select a different grid option with the mouse or by pressing `1`, `2`, `3`, or `4`. You can modify these default grid options by going to the gTile extension settings.
-- Select the starting tile by pressing the letter associated with that tile and then select the ending tile by pressing the letter associated with that tile. For example, to tile the window to the left half of the screen in a 4x4 grid, press `a` and then `n`.
-- To set the window to a single tile, press the letter twice. For example, to tile to the upper left corner, press `a` twice.
-
-![OhMyDebn gTile window tiling](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-gtile.png)
-
-To configure gTile:
-- go to System Settings -> Extensions
-- next to gTile, click the Configure button
-- click the Behavior tab
-
-![OhMyDebn gTile settings](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-gtile-settings.png)
-
-There are also hotkeys for common tiling options that leverage gTile for window gaps:
-- Press `Ctrl + Shift + 1 (numeric keypad)` to tile to bottom left corner with gaps.
-- Press `Ctrl + Shift + 2 (numeric keypad)` or `Ctrl + Shift + Down` to tile to bottom half with gaps.
-- Press `Ctrl + Shift + 3 (numeric keypad)` to tile to bottom right corner with gaps.
-- Press `Ctrl + Shift + 4 (numeric keypad)` or `Ctrl + Shift + Left` to tile to left half with gaps.
-- Press `Ctrl + Shift + 5 (numeric keypad)` or `Ctrl + Shift + Enter` to tile to full screen with gaps.
-- Press `Ctrl + Shift + 6 (numeric keypad)` or `Ctrl + Shift + Right` to tile to right half with gaps.
-- Press `Ctrl + Shift + 7 (numeric keypad)` to tile to top left corner with gaps.
-- Press `Ctrl + Shift + 8 (numeric keypad)` or `Ctrl + Shift + Up` to tile to top half with gaps.
-- Press `Ctrl + Shift + 9 (numeric keypad)` to tile to top right corner with gaps.
-
-For example, to lay out windows like in the following screenshot:
-- Press `Ctrl + Shift + O` to display the OhMyDebn logo and then `Ctrl + Shift 7` to tile to the upper left corner.
-- Press `Ctrl + Shift + S` to display the screenfetch window and then `Ctrl + Shift + 1` to tile to the lower left corner.
-- Press `Super + T` to start btop and then `Ctrl + Shift + 9` to tile to the upper right corner.
-- Launch VSCode and then press `Ctrl + Shift + 3` to tile to the lower right corner.
-
-![OhMyDebn gTile window tiling with gaps](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn.png)
 
 # Desktop Themes
 
@@ -289,19 +237,13 @@ Desktop and window effects are enabled by default. If you would like to disable 
 
 If you need to zoom in on part of your screen, you can do so by enabling the magnifier via [OhMyDebn Menu](#ohmydebn-menu). Once enabled, hold down the Alt key and then use your scroll wheel to zoom in and out.
 
-# Hotkeys
-
-Pressing `Super + K` will open Chromium and navigate to this list of keyboard bindings.
-
 ## OhMyDebn
 
 | Hotkey | Function |
 |--------|----------|
 | `Super + Alt + Space` | OhMyDebn menu |
-| `Ctrl + Shift + G` | gTile window tiling |
 | `Ctrl + Shift + O` | OhMyDebn logo |
 | `Ctrl + Shift + S` | screenfetch system summary |
-| `Ctrl + Shift + A` | audio visualizer (Cava) |
 | `Ctrl + Super + T` | Pick a new theme |
 | `Ctrl + Super + B` | Next background image for theme |
 
@@ -309,35 +251,20 @@ Pressing `Super + K` will open Chromium and navigate to this list of keyboard bi
 
 | Hotkey | Function |
 |--------|----------|
-| `Alt + Tab` | Cycle through open windows |
-| `Shift + Alt + Tab` | Cycle backwards through open windows |
-| `Ctrl + Alt + Tab` | Cycle through open windows with more info |
-| `Alt + Space` | Activate window menu |
-| `Alt + F7` | Move window |
+
+| `Alt + Tab` | Show the window selection screen |
+| `Alt + Super + arrow_left` | Cycle backwards through open windows |
+| `Alt + Super + arrow_right` | Cycle through open windows |
+
+| `Super + Left` | Push window left |
+| `Super + up` | Maximize window |
+| `Super + Right` | Push window right |
+| `Super + Down` | Push window center |
+
+| `Super` | menu |
+
 | `Super + W` | Close window |
 | `Super + D` | Show desktop (minimize all windows) |
-| `Super + Left` | Push window left |
-| `Super + Right` | Push window right |
-| `Super + Up` | Push window up |
-| `Super + Down` | Push window down |
-| `Super + PageUp` | Maximize window |
-| `Super + PageDown` | Minimize window |
-| `Ctrl + Alt + Down` | Window selection |
-| `Ctrl + Shift + G` | gTile window tiling |
-| `Ctrl + Shift + 1 (numeric keypad)` | Tile to bottom left corner with gaps |
-| `Ctrl + Shift + 2 (numeric keypad)` | Tile to bottom half with gaps |
-| `Ctrl + Shift + 3 (numeric keypad)` | Tile to bottom right corner with gaps |
-| `Ctrl + Shift + 4 (numeric keypad)` | Tile to left half with gaps |
-| `Ctrl + Shift + 5 (numeric keypad)` | Tile to full screen with gaps |
-| `Ctrl + Shift + 6 (numeric keypad)` | Tile to right half with gaps |
-| `Ctrl + Shift + 7 (numeric keypad)` | Tile to top left corner with gaps |
-| `Ctrl + Shift + 8 (numeric keypad)` | Tile to top half with gaps |
-| `Ctrl + Shift + 9 (numeric keypad)` | Tile to top right corner with gaps |
-| `Ctrl + Shift + Down` | Tile to bottom half with gaps |
-| `Ctrl + Shift + Left` | Tile to left half with gaps |
-| `Ctrl + Shift + Enter` | Tile to full screen with gaps |
-| `Ctrl + Shift + Right` | Tile to right half with gaps |
-| `Ctrl + Shift + Up` | Tile to top half with gaps |
 
 ## Workspaces
 
@@ -366,31 +293,14 @@ Pressing `Super + K` will open Chromium and navigate to this list of keyboard bi
 
 | Hotkey | Function |
 |--------|----------|
-| `Super + Space` | Application Launcher (Rofi) |
-| `Super + Return` | Terminal (Alacritty) |
-| `Super + A` | AI (Grok) |
-| `Super + B` | Browser (Chromium) |
+| `Super + T` | Terminal (Alacritty) |
+| `Super + B` | Browser (zen) |
 | `Super + F` | File Manager (Nemo) |
-| `Super + G` | Google search |
-| `Super + T` | btop |
 | `Super + N` | Neovim |
-| `Super + O` | ohmydebn.org |
 | `Super + E` | Email (GMail) |
-| `Super + C` | Calendar (Google Calendar) |
-| `Super + X` | X.com |
 | `Alt + F2` | Run dialog |
 | `Shift + Super + C` | Cinnamon calendar
 
-## Browser (Chromium)
-
-| Hotkey | Function |
-|--------|----------|
-| `Ctrl + Shift + B` | Toggle bookmark list |
-| `Ctrl + T` | New tab |
-| `Ctrl + N` | New window |
-| `Ctrl + Shift + N` | New Incognito window |
-| `Ctrl + W` | Close tab |
-| `Ctrl + Shift + T` | Restore tab |
 
 ## Password and Bookmark Management (KeePassXC)
 
