@@ -1,4 +1,4 @@
-
+### This is a fork from https://github.com/dougburks/ohmydebn
 
 OhMyDebn requires the following:
 - x86_64 or ARM architecture
@@ -253,8 +253,20 @@ If you need to zoom in on part of your screen, you can do so by enabling the mag
 |--------|----------|
 
 | `Alt + Tab` | Show the window selection screen |
+
+`Shift + Tab just work in Alt + Tab mode`
+
+| `Shift + Tab` | window selection through monitors |
+
+
 | `Alt + Super + arrow_left` | Cycle backwards through open windows |
+
+| `Alt + Super + H` | Cycle backwards through open windows |
+
+
 | `Alt + Super + arrow_right` | Cycle through open windows |
+
+| `Alt + Super + L` | Cycle through open windows |
 
 | `Super + Left` | Push window left |
 | `Super + up` | Maximize window |
