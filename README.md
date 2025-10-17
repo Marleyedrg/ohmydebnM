@@ -47,68 +47,6 @@ Once installation completes, you can enjoy your new OhMyDebn desktop!
 
 ![OhMyDebn screenshot](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn.png)
 
-# Alternative installations
-
-## Debian 13 Minimal
-
-Instead of starting from a Debian Live 13 Cinnamon ISO image, an alternative is to start from a Debian 13 minimal netinst installer on x86_64 or ARM64 hardware. Once the Debian netinst installer completes, reboot into your new installation and then start our installer as shown above. It will automatically install the necessary Cinnamon desktop packages and continue on with OhMyDebn installation. Once installation is complete, reboot and enjoy your new OhMyDebn desktop!
-
-## Raspberry Pi
-
-For best results, we recommend a Raspberry Pi 5 with SSD and at least 4GB RAM.
-
-The default OS for Raspberry Pi is Raspberry Pi OS and the latest version is based on Debian 13. Once you're running this version and are connected to the Internet, you can run our installer as shown above. It will automatically update /etc/lightdm/lightdm.conf to log into our Cinnamon desktop. Once our installer is complete, reboot and enjoy your new OhMyDebn desktop!
-
-If you are running an older Raspberry Pi or the desktop otherwise feels sluggish, consider disabling desktop effects. Instructions can be found later in a separate section below.
-
-## Proxmox 9
-
-Proxmox 9 is based on Debian 13 and will work with our installer as well.
-
-WARNING! We do not recommend installing OhMyDebn on a production Proxmox server! However, Proxmox + OhMyDebn makes for an amazing personal virtualization workstation.
-
-In order to install on Proxmox 9, you will need to take care of a few prerequisites:
-
-1. Make sure that Proxmox has full access to APT repos. By default, Proxmox is configured to use Proxmox subscription repos. If you don't have a subscription, then you will need to change to the no-subscription repo. For more information, please see https://pve.proxmox.com/wiki/Package_Repositories.
-2. Make sure that sudo is installed (`apt -y install sudo`).
-3. Make sure that you have a non-root user account (for example: `adduser yourusername`).
-4. Make sure that your non-root user account has sudo privileges (for example: `usermod -aG sudo yourusername`).
-5. Login as your non-root user account.
-6. Start the installation as shown above.
-7. Once the installation completes, reboot (`sudo reboot`), login as your non-root user, and enjoy your new OhMyDebn desktop!
-
-# OhMyDebn Menu
-
-The OhMyDebn menu allows you to launch apps, learn about OhMyDebn, and configure and control the system. You can activate this menu by pressing `Super + Alt + Space`.
-
-![OhMyDebn Menu](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-menu.png)
-
-
-# OhMyDebn Logo
-
-To show the OhMyDebn logo in all of its glory, press `Ctrl + Shift + O`.
-
-![OhMyDebn logo gui](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-logo-gui.png)
-
-# OhMyDebn Demo
-
-To show an animated OhMyDebn logo demo, press `Ctrl + Alt + D`.
-
-![OhMyDebn animated logo demo](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-demo.gif)
-
-# System summary via screenfetch
-
-To see a system summary, press `Ctrl + Shift + S` to launch screenfetch.
-
-![OhMyDebn system summary via screenfetch](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-screenfetch-gui.png)
-
-# System monitoring via btop
-
-![OhMyDebn btop](https://raw.githubusercontent.com/dougburks/ohmydebn-docs/refs/heads/main/images/ohmydebn-btop.png)
-
-
-
-
 ## OhMyDebn
 
 | Hotkey | Function |
