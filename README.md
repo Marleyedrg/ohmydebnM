@@ -29,6 +29,7 @@ git clone git@github.com:Marleyedrg/ohmydebn.git
 3. Once you have reviewed install.sh and the rest of the code in this repo, you can run the install script:
 ```
 cd ohmydebn
+bash install.sh 
 ```
 ## Installation Options
 
