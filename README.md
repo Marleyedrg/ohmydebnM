@@ -61,30 +61,17 @@ Once installation completes, you can enjoy your new OhMyDebn desktop!
 
 | Hotkey | Function |
 |--------|----------|
-
 | `Alt + Tab` | Show the window selection screen |
-
-`Shift + Tab just work in Alt + Tab mode`
-
-| `Shift + Tab` | window selection through monitors |
-
-
+| `Shift + Tab` + ` Tab` | window selection through monitors |
 | `Alt + Super + arrow_left` | Cycle backwards through open windows |
-
 | `Alt + Super + H` | Cycle backwards through open windows |
-
-
 | `Alt + Super + arrow_right` | Cycle through open windows |
-
 | `Alt + Super + L` | Cycle through open windows |
-
 | `Super + Left` | Push window left |
 | `Super + up` | Maximize window |
 | `Super + Right` | Push window right |
 | `Super + Down` | Push window center |
-
 | `Super` | menu |
-
 | `Super + W` | Close window |
 | `Super + D` | Show desktop (minimize all windows) |
 
